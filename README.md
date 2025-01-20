@@ -6,3 +6,5 @@ The application operates using the UDP and TCP protocols for local communication
 In future updates, cloud and internet-based functionalities will also be added.
 
 ![Alt text](Griffin_Image_1.jpg)
+![Alt text](Griffin_Image_2.jpg)
+![Alt text](Griffin_Image_3.jpg)
