@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashbord_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="0dp"
+
+
+            android:layout_height="0dp"
+
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/default_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout20"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout21"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.3"
+            tools:layout_conversion_absoluteHeight="80dp"
+            tools:layout_conversion_absoluteWidth="327dp">
+
+            <Button
+                android:id="@+id/show_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/music_list"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                app:layout_constraintEnd_toStartOf="@+id/previus_musics"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHeight_percent="0.85"
+                app:layout_constraintWidth_percent="0.19"
+                tools:layout_conversion_absoluteHeight="56dp"
+                tools:layout_conversion_absoluteWidth="66dp"
+                tools:layout_editor_absoluteX="22dp"
+                tools:layout_editor_absoluteY="27dp" />
+
+
+            <Button
+                android:id="@+id/previus_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/n_p_music"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/play_puse_musics"
+
+
+                app:layout_constraintHeight_percent="0.85"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/show_musics"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.19"
+                tools:layout_conversion_absoluteHeight="56dp"
+                tools:layout_conversion_absoluteWidth="66dp"
+                tools:layout_editor_absoluteX="98dp"
+                tools:layout_editor_absoluteY="27dp" />
+
+            <Button
+                android:id="@+id/play_puse_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/play_music"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/next_musics"
+                app:layout_constraintHeight_percent="0.85"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/previus_musics"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.19"
+                tools:layout_conversion_absoluteHeight="56dp"
+                tools:layout_conversion_absoluteWidth="66dp" />
+
+            <Button
+                android:id="@+id/next_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/n_p_music"
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.85"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/play_puse_musics"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.19"
+                tools:layout_conversion_absoluteHeight="56dp"
+                tools:layout_conversion_absoluteWidth="66dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/fazaye_weather"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_setting"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout15"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout15"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout15"
+            app:layout_constraintVertical_bias="0.526"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp">
+
+
+            <TextView
+                android:id="@+id/clockid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="12:20 AM"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_27font_mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/date"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="52dp"
+
+                android:gravity="right"
+
+
+                android:paddingRight="5dp"
+                android:text="7"
+
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25font_mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/namedate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/namedate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@+id/weather_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/namedate" />
+
+
+            <TextView
+                android:id="@+id/namedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:gravity="center_vertical"
+                android:text="Satureday \nMay2023"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12font_mdp"
+                app:layout_constraintEnd_toEndOf="@+id/clockid"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/date"
+                app:layout_constraintTop_toBottomOf="@+id/clockid" />
+
+            <ImageView
+                android:id="@+id/weather_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintHeight_percent="0.4"
+                app:layout_constraintHorizontal_bias="0.176"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date"
+                app:layout_constraintVertical_bias="0.101"
+                app:layout_constraintWidth_percent="0.45"
+                app:srcCompat="@drawable/weather_no_internet" />
+
+            <TextView
+                android:id="@+id/temp_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="--°c"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/namedate" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/_70mdp"
+                android:layout_height="9dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/weather_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.813"
+                app:layout_constraintStart_toEndOf="@+id/date"
+                app:layout_constraintTop_toBottomOf="@+id/temp_textview"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/color_line" />
+
+            <TextView
+                android:id="@+id/weather_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="-----"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/_15mdp"
+                android:layout_height="@dimen/_15mdp"
+                android:layout_marginStart="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintStart_toEndOf="@+id/weather_image"
+                app:layout_constraintTop_toBottomOf="@+id/weather_text"
+                app:layout_constraintVertical_bias="0.772"
+                app:layout_constraintWidth_percent="0.1"
+                app:srcCompat="@drawable/icon_wifi" />
+
+            <TextView
+                android:id="@+id/internetconection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8font_mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_griffin_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="@drawable/icon_griffin_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_setting"
+            app:layout_constraintHeight_percent="0.22"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout20"
+            app:layout_constraintTop_toTopOf="@+id/btn_setting"
+            app:layout_constraintWidth_percent="0.09"
+            tools:layout_conversion_absoluteHeight="185dp"
+            tools:layout_conversion_absoluteWidth="89dp" />
+
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.22"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginBottom="16dp"
+
+
+            android:background="@drawable/setting"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_display_off"
+
+            app:layout_constraintStart_toEndOf="@+id/btn_griffin_home"
+            app:layout_constraintWidth_percent="0.09"
+            tools:layout_conversion_absoluteHeight="185dp"
+            tools:layout_conversion_absoluteWidth="89dp" />
+
+
+        <Button
+            android:id="@+id/btn_display_off"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/icon_display_off"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout20"
+            app:layout_constraintHeight_percent="0.22"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_setting"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout20"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintWidth_percent="0.09"
+            tools:layout_conversion_absoluteHeight="185dp"
+            tools:layout_conversion_absoluteWidth="89dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout21"
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.65"
+            app:layout_constraintWidth_percent="0.3"
+            android:background="@drawable/fazaye_weather"
+
+            app:layout_constraintBottom_toTopOf="@+id/btn_camera"
+            app:layout_constraintEnd_toStartOf="@+id/choosed_layout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout15"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout15"
+            app:layout_constraintVertical_bias="0.058"
+            tools:layout_conversion_absoluteHeight="497dp"
+            tools:layout_conversion_absoluteWidth="332dp">
+
+
+            <TextView
+                android:id="@+id/chooser_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25mdp"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="16dp"
+
+                android:text="Choose \nyour Task"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/senario_selector_btn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.12"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/senario_btn_unselect"
+                app:layout_constraintBottom_toTopOf="@+id/favorite_selector_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chooser_title" />
+
+            <Button
+                android:id="@+id/favorite_selector_btn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/favorite_unselect"
+                app:layout_constraintBottom_toTopOf="@+id/security_selector_btn"
+                app:layout_constraintEnd_toEndOf="@+id/senario_selector_btn"
+                app:layout_constraintHeight_percent="0.12"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/senario_selector_btn"
+                app:layout_constraintTop_toBottomOf="@+id/senario_selector_btn" />
+
+            <Button
+                android:id="@+id/security_selector_btn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/seciurity_btn_unselect"
+
+
+                app:layout_constraintBottom_toTopOf="@+id/energy_selector_btn"
+                app:layout_constraintEnd_toEndOf="@+id/favorite_selector_btn"
+                app:layout_constraintHeight_percent="0.12"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/favorite_selector_btn"
+                app:layout_constraintTop_toBottomOf="@+id/favorite_selector_btn" />
+
+            <Button
+                android:id="@+id/energy_selector_btn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/energy_metering_unselect"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/security_selector_btn"
+                app:layout_constraintHeight_percent="0.12"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/security_selector_btn"
+                app:layout_constraintTop_toBottomOf="@+id/security_selector_btn"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_iphone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/iphone"
+
+            app:layout_constraintBottom_toBottomOf="@+id/btn_display_off"
+            app:layout_constraintEnd_toStartOf="@+id/btn_camera"
+            app:layout_constraintHeight_percent="0.28"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout20"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout21"
+            app:layout_constraintWidth_percent="0.15"
+            tools:layout_conversion_absoluteHeight="231dp"
+            tools:layout_conversion_absoluteWidth="136dp" />
+
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/icon_camera"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_iphone"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout21"
+            app:layout_constraintHeight_percent="0.28"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_iphone"
+            app:layout_constraintWidth_percent="0.15"
+            tools:layout_conversion_absoluteHeight="231dp"
+            tools:layout_conversion_absoluteWidth="136dp" />
+
+        <LinearLayout
+            android:id="@+id/choosed_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:background="@drawable/fazaye_weather"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.65"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout21"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout21"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.3"
+            tools:layout_conversion_absoluteHeight="497dp"
+            tools:layout_conversion_absoluteWidth="326dp">
+
+
+            <view
+                android:id="@+id/choosed_viewpager"
+                class="com.example.griffin.mudels.NonSwipeableViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+
+                android:layout_marginBottom="1dp"
+                android:layout_weight="4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/background_local"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="592dp">
+
+
+                <TextView
+                    android:id="@+id/temp_disconnected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Disconnected..."
+                    android:textColor="@color/white"
+                    android:textSize="37dp"
+                    android:visibility="gone"
+
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="373dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="2"
+                    android:visibility="visible">
+
+
+                    <TextView
+
+                        android:id="@+id/scenario_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="Scenario Name"
+
+                        android:textColor="@color/white"
+
+
+                        android:textSize="@dimen/_9font_mdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/plug_status"
+                        android:layout_width="@dimen/_39mdp"
+                        android:layout_height="@dimen/_39mdp"
+                        android:background="@drawable/senario_icon"
+                        android:clickable="false"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.194" />
+
+                    <TextView
+
+                        android:id="@+id/dfsfs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+
+
+
+                        android:text="Display\n Timetable"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11font_mdp"
+                        app:layout_constraintEnd_toEndOf="@+id/plug_status"
+                        app:layout_constraintStart_toStartOf="@+id/plug_status"
+                        app:layout_constraintTop_toBottomOf="@+id/plug_status" />
+
+                    <TextView
+                        android:id="@+id/timetable_1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/back_btn_2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="2dp"
+
+
+                        android:paddingRight="3dp"
+                        android:paddingBottom="2dp"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbars="vertical"
+                        android:text="@null"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7font_mdp"
+                        app:layout_constraintBottom_toTopOf="@+id/timetable_2"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent="0.085"
+
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dfsfs"
+                        app:layout_constraintWidth_percent="0.8" />
+
+                    <TextView
+                        android:id="@+id/timetable_2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/back_btn_2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="2dp"
+                        android:text="@null"
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/_7font_mdp"
+                        app:layout_constraintBottom_toTopOf="@+id/timetable_3"
+                        app:layout_constraintEnd_toEndOf="@+id/timetable_1"
+                        app:layout_constraintHeight_percent="0.085"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/timetable_1"
+                        app:layout_constraintTop_toBottomOf="@+id/timetable_1"
+                        app:layout_constraintWidth_percent="0.8" />
+
+                    <TextView
+                        android:id="@+id/timetable_3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/back_btn_2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="2dp"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbars="vertical"
+                        android:text="@null"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7font_mdp"
+                        app:layout_constraintBottom_toTopOf="@+id/timetable_4"
+                        app:layout_constraintEnd_toEndOf="@+id/timetable_2"
+                        app:layout_constraintHeight_percent="0.085"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/timetable_2"
+                        app:layout_constraintTop_toBottomOf="@+id/timetable_2"
+                        app:layout_constraintWidth_percent="0.8" />
+
+                    <TextView
+                        android:id="@+id/timetable_4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="32dp"
+                        android:background="@drawable/back_btn_2"
+                        android:gravity="center"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="2dp"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbars="vertical"
+                        android:text="@null"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7font_mdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/timetable_3"
+                        app:layout_constraintHeight_percent="0.085"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/timetable_3"
+                        app:layout_constraintTop_toBottomOf="@+id/timetable_3"
+                        app:layout_constraintWidth_percent="0.8" />
+
+                    <ImageButton
+                        android:id="@+id/set_timer_plug_item_menu"
+                        android:layout_width="@dimen/_17mdp"
+                        android:layout_height="@dimen/_12mdp"
+
+
+                        android:layout_weight="1"
+
+                        android:background="@drawable/threepoint_pupapmenu"
+                        android:enabled="false"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/plug_status"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.74"
+                        app:layout_constraintStart_toEndOf="@+id/plug_status"
+                        app:layout_constraintTop_toBottomOf="@+id/scenario_name" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/exit_senario_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+
+
+            android:background="@drawable/fazaye_entekhab_ei"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_camera"
+            app:layout_constraintEnd_toEndOf="@+id/choosed_layout"
+            app:layout_constraintHeight_percent="0.28"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_camera"
+            app:layout_constraintStart_toStartOf="@+id/choosed_layout"
+            app:layout_constraintTop_toTopOf="@+id/btn_camera"
+
+            >
+
+
+            <Button
+                android:id="@+id/btn_exit_senario"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+
+
+                android:background="@drawable/icon_exit"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_enter_senario"
+                app:layout_constraintEnd_toStartOf="@+id/btn_enter_senario"
+                app:layout_constraintHeight_percent="0.8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_enter_senario"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_regular"
+                android:text="Senario"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9font_mdp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/senario_text_btn_2"
+                app:layout_constraintEnd_toEndOf="@+id/btn_exit_senario"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/btn_exit_senario" />
+
+            <Button
+                android:id="@+id/btn_enter_senario"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/icon_enter"
+
+                android:gravity="center"
+
+                app:layout_constraintBottom_toTopOf="@+id/senario_text_btn_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_exit_senario"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.33" />
+
+            <TextView
+                android:id="@+id/senario_text_btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_regular"
+                android:text="Senario"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9font_mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_enter_senario"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toStartOf="@+id/btn_enter_senario"
+                app:layout_constraintTop_toBottomOf="@+id/btn_enter_senario" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

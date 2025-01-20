@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout42"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.setting_sync_send">
+
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="60dp"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/start_send_db"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/start_send_db"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_16mdp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.05"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/back_btn_color"
+        android:maxLines="1"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_6font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/connection_status_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+
+    <TextView
+        android:id="@+id/connection_status_send"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.6"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/back_btn_color"
+        android:gravity="center"
+        android:text="Disconnect"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:textSize="@dimen/_8font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_send_db" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout48"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6"
+        android:background="@drawable/background_local"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connection_status_send">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout50"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+
+
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/target_ip"
+            app:layout_constraintStart_toStartOf="@+id/target_ip">
+
+            <TextView
+
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="32dp"
+                android:text="Receiver IP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/target_ip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="29dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+            <TextView
+                android:id="@+id/target_ip"
+                android:clickable="false"
+                android:textColor="@color/white"
+
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/back_btn_color"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+
+                android:textAlignment="center"
+                android:textSize="@dimen/_9font_mdp"
+
+                app:layout_constraintBottom_toTopOf="@+id/textView59"
+
+
+                app:layout_constraintEnd_toEndOf="@+id/textView58"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/textView58"
+                app:layout_constraintTop_toBottomOf="@+id/textView58"
+                app:layout_constraintWidth_percent="0.5"
+                tools:layout_conversion_absoluteHeight="40dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+            <TextView
+
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Sending Steps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/sending_steps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/target_ip"
+                tools:layout_conversion_absoluteHeight="29dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+            <TextView
+                android:id="@+id/sending_steps"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/back_btn_color"
+                android:maxLines="1"
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textAlignment="center"
+
+                android:textSize="@dimen/_9font_mdp"
+
+
+                app:layout_constraintBottom_toTopOf="@+id/textView60"
+                app:layout_constraintEnd_toEndOf="@+id/target_ip"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/target_ip"
+                app:layout_constraintTop_toBottomOf="@+id/textView59"
+                app:layout_constraintWidth_percent="0.5"
+                tools:layout_conversion_absoluteHeight="40dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+            <TextView
+
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Received"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/learn_camera_ipadsddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sending_steps"
+                tools:layout_conversion_absoluteHeight="29dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+            <TextView
+                android:id="@+id/learn_camera_ipadsddress"
+                android:layout_width="0dp"
+                android:maxLines="1"
+
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/back_btn_color"
+
+                android:textColor="@color/white"
+                android:ems="10"
+
+                android:inputType="textPersonName"
+
+                android:textAlignment="center"
+                android:textSize="@dimen/_9font_mdp"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sending_steps"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/sending_steps"
+                app:layout_constraintTop_toBottomOf="@+id/textView60"
+                app:layout_constraintWidth_percent="0.5"
+                tools:layout_conversion_absoluteHeight="40dp"
+                tools:layout_conversion_absoluteWidth="300dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

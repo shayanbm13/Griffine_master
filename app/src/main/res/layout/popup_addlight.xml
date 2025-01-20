@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout54"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/popupback"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/edit_light_name_pupop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/_7font_mdp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/learn_light_pupop"
+        app:layout_constraintEnd_toStartOf="@+id/ok_name_light_pupop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="170dp" />
+
+
+    <Button
+        android:id="@+id/ok_name_light_pupop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_btn_color"
+        android:gravity="center"
+        android:text="OK"
+        android:textSize="@dimen/_7font_mdp"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_light_name_pupop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_light_name_pupop"
+        app:layout_constraintTop_toTopOf="@+id/edit_light_name_pupop"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="88dp" />
+
+    <Button
+        android:id="@+id/learn_light_pupop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_btn_color"
+
+        android:fontFamily="@font/prompt_regular"
+        android:gravity="center"
+        android:text="Learn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/delete_light_pupop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_light_name_pupop"
+        app:layout_constraintWidth_percent="0.75"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="225dp" />
+
+    <Button
+        android:id="@+id/delete_light_pupop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_btn_color"
+        android:fontFamily="@font/prompt_regular"
+        android:gravity="center"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/on_off_test_light_pupop"
+        app:layout_constraintEnd_toEndOf="@+id/learn_light_pupop"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/learn_light_pupop"
+        app:layout_constraintTop_toBottomOf="@+id/learn_light_pupop"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="225dp" />
+
+    <Button
+        android:id="@+id/on_off_test_light_pupop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_btn_color"
+
+        android:fontFamily="@font/prompt_regular"
+        android:gravity="center"
+        android:text="ON / OFF"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+
+        app:layout_constraintBottom_toTopOf="@+id/send_to"
+        app:layout_constraintEnd_toEndOf="@+id/delete_light_pupop"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/delete_light_pupop"
+        app:layout_constraintTop_toBottomOf="@+id/delete_light_pupop"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="225dp" />
+
+    <Button
+        android:id="@+id/send_to"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_btn_color"
+        android:fontFamily="@font/prompt_regular"
+        android:gravity="center"
+        android:text="Send To"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/on_off_test_light_pupop"
+        app:layout_constraintHeight_percent="0.14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/on_off_test_light_pupop"
+        app:layout_constraintTop_toBottomOf="@+id/on_off_test_light_pupop"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="225dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

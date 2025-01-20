@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.choose_lolcal_work.select_work_plug">
+
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select plug"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sw_chose_plug"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/select_back"
+        android:text="select"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select Functionality"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/plug_func_on"
+        app:layout_constraintStart_toStartOf="@+id/sw_chose_plug"
+        app:layout_constraintTop_toBottomOf="@+id/sw_chose_plug"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/plug_func_on"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+
+
+        android:background="@drawable/functionality_on_anable_off"
+        app:layout_constraintBottom_toTopOf="@+id/plug_func_off"
+        app:layout_constraintEnd_toEndOf="@+id/sw_chose_plug"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/sw_chose_plug"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/plug_func_off"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+
+
+        android:background="@drawable/functionality_off_anable_off"
+        app:layout_constraintBottom_toTopOf="@+id/plug_func_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/plug_func_on"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/plug_func_on"
+        app:layout_constraintTop_toBottomOf="@+id/plug_func_on"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/plug_func_toggle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+
+
+        android:background="@drawable/functionality_toggle_anable_off"
+        app:layout_constraintBottom_toTopOf="@+id/sw_chose_plug_cancel"
+        app:layout_constraintEnd_toEndOf="@+id/plug_func_off"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/plug_func_off"
+        app:layout_constraintTop_toBottomOf="@+id/plug_func_off"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/sw_chose_plug_cancel"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+        android:background="@drawable/back_btn_color"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        android:text="Cancel"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/plug_func_toggle"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/plug_func_toggle"
+        app:layout_constraintTop_toBottomOf="@+id/plug_func_toggle"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.35" />
+
+    <Button
+        android:id="@+id/sw_chose_plug_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ok"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="836dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

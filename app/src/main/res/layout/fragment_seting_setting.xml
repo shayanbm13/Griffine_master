@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="8dp"
+
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".fragment.setting_setting.seting_setting">
+
+
+        <TextView
+
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/setting_network"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="16dp"
+
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/network_off"
+            android:fontFamily="@font/prompt_regular"
+            android:gravity="right"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16pt"
+            app:layout_constraintBottom_toTopOf="@+id/setting_learn"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".13"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <Button
+            android:id="@+id/setting_learn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/learn_off"
+            android:fontFamily="@font/prompt_regular"
+            android:gravity="right"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16pt"
+            app:layout_constraintBottom_toTopOf="@+id/setting_simcard"
+
+            app:layout_constraintEnd_toEndOf="@+id/setting_network"
+            app:layout_constraintHeight_percent=".13"
+            app:layout_constraintStart_toStartOf="@+id/setting_network"
+            app:layout_constraintTop_toBottomOf="@+id/setting_network"
+            app:layout_constraintVertical_bias="0.064" />
+
+        <Button
+            android:id="@+id/setting_simcard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/simcard_off"
+            app:layout_constraintBottom_toTopOf="@+id/setting_homestyle"
+
+            app:layout_constraintEnd_toEndOf="@+id/setting_learn"
+            app:layout_constraintHeight_percent=".13"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/setting_learn"
+            app:layout_constraintTop_toBottomOf="@+id/setting_learn"
+            app:layout_constraintVertical_bias="0.064" />
+
+        <Button
+            android:id="@+id/setting_homestyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/homestyle_off"
+            app:layout_constraintBottom_toTopOf="@+id/setting_synchornalization"
+
+            app:layout_constraintEnd_toEndOf="@+id/setting_simcard"
+            app:layout_constraintHeight_percent=".13"
+            app:layout_constraintStart_toStartOf="@+id/setting_simcard"
+            app:layout_constraintTop_toBottomOf="@+id/setting_simcard"
+            app:layout_constraintVertical_bias="0.064" />
+
+        <Button
+            android:id="@+id/setting_synchornalization"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/synchonization_off"
+
+            app:layout_constraintEnd_toEndOf="@+id/setting_homestyle"
+            app:layout_constraintHeight_percent=".13"
+            app:layout_constraintStart_toStartOf="@+id/setting_homestyle"
+            app:layout_constraintTop_toBottomOf="@+id/setting_homestyle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

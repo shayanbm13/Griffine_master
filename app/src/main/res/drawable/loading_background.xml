@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="16dp" /> <!-- شعاع گوشه‌ها -->
+    <solid android:color="#80FFFFFF" /> <!-- رنگ پس‌زمینه کمی مات -->
+</shape>

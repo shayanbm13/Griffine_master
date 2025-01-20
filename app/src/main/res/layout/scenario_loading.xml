@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    >
+    <com.example.loadinganimation.LoadingAnimation
+
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:elevation="10dp"
+        android:layout_gravity="top"
+        android:gravity="top"
+        app:barType="@drawable/rollround"
+        app:boldText="false"
+        app:enlarge="5"
+        app:textColor="@color/purple_500"
+        app:textSize="15sp" />
+
+    <com.example.griffin.mudels.CustomLoadingLine
+        android:id="@+id/loadingAnim"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:background="#80FFFFFF"-->
+<!--        android:foreground="?android:attr/selectableItemBackground"-->
+<!--        app:cardBackgroundColor="#80A35CFE"-->
+<!--        app:cardElevation="8dp"-->
+<!--        app:cardUseCompatPadding="true">-->
+
+
+
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+</LinearLayout>

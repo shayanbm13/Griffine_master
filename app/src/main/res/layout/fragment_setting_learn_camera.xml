@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout17"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".fragment.setting_four.setting_learn_camera">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:text="Camera"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/back_btn_color"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHeight_percent="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageButton
+            android:id="@+id/ex_cam"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/local_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <TextView
+            android:id="@+id/cam_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="Camera 1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/next_cam"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ex_cam"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/next_cam"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/local_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+
+        android:id="@+id/textView39"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="User"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_user"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+    <EditText
+        android:id="@+id/learn_camera_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.055"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/back_btn_color"
+
+
+        android:ems="10"
+        android:hint="admin"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+
+        android:id="@+id/textView40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintEnd_toEndOf="@+id/learn_camera_user"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_user"
+        app:layout_constraintTop_toBottomOf="@+id/learn_camera_user" />
+
+    <EditText
+        android:id="@+id/learn_camera_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back_btn_color"
+
+
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/learn_camera_user"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_user"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <TextView
+
+        android:id="@+id/textView41"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="IP Address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_password"
+        app:layout_constraintTop_toBottomOf="@+id/learn_camera_password" />
+
+    <EditText
+        android:id="@+id/learn_camera_ipaddress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+
+        android:background="@drawable/back_btn_color"
+
+
+        android:ems="10"
+        android:hint="ip"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/learn_camera_password"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_password"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <TextView
+
+        android:id="@+id/textView42"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Port"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/learn_camera_port"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_ipaddress"
+        app:layout_constraintTop_toBottomOf="@+id/learn_camera_ipaddress"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/learn_camera_port"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+
+        android:background="@drawable/back_btn_color"
+
+
+        android:ems="10"
+        android:hint="port"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/learn_camera_ipaddress"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_ipaddress"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <TextView
+
+        android:id="@+id/textView43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Channel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_port"
+        app:layout_constraintTop_toBottomOf="@+id/learn_camera_port" />
+
+    <EditText
+        android:id="@+id/learn_camera_channel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back_btn_color"
+
+
+        android:ems="10"
+        android:hint="channel"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/learn_camera_port"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_port"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <TextView
+
+        android:id="@+id/textView44"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Subtype"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintEnd_toEndOf="@+id/learn_camera_channel"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_channel"
+        app:layout_constraintTop_toBottomOf="@+id/learn_camera_channel" />
+
+    <EditText
+        android:id="@+id/learn_camera_subtype"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+
+
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:hint="subtype"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/learn_camera_channel"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/learn_camera_channel"
+        app:layout_constraintTop_toBottomOf="@+id/textView44"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

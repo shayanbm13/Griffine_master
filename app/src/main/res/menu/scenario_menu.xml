@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/add_scenario"
+        android:title="add scenario">
+
+
+    </item><item android:id="@+id/edit_scenario"
+        android:title="edit scenario">
+
+
+    </item>
+    <item android:id="@+id/delete_scenario"
+        android:title="delete scenario">
+
+
+    </item>
+    <item android:id="@+id/rename_scenario"
+
+        android:title="rename scenario">
+
+
+
+    </item>    <item android:id="@+id/set_time_scenario"
+
+        android:title="Set time for scenario">
+
+
+
+    </item>
+</menu>

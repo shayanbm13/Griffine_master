@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_gravity="center"
+
+        android:textAlignment="center"
+        android:id="@+id/camera_learn_added"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/camera_ic"
+        android:paddingTop="7dp"
+        android:gravity="bottom"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+
+        android:paddingBottom="20dp"
+
+        android:text="dfsdfsf"
+
+        android:textSize="@dimen/_7font_mdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/prompt_regular"
+        tools:ignore="RtlCompat">
+
+
+    </Button>
+
+</LinearLayout>

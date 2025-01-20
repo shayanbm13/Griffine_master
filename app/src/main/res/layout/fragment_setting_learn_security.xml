@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.setting_learn_security">
+
+
+    <TextView
+
+        android:id="@+id/textView23"
+        android:layout_width="389dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Security"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Alarm Duration"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/alarm_duration"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_duration"
+        app:layout_constraintStart_toStartOf="@+id/alarm_duration"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/alarm_duration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Arm Active Deley"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/arm_active_deley"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_duration"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/arm_active_deley"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Alarm Trigger Delay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/alarm_trigger_deley"
+        app:layout_constraintEnd_toEndOf="@+id/arm_active_deley"
+        app:layout_constraintStart_toStartOf="@+id/arm_active_deley"
+        app:layout_constraintTop_toBottomOf="@+id/arm_active_deley"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/alarm_trigger_deley"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <TextView
+
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Password Security "
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/password_security"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_trigger_deley"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/password_security"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        android:layout_marginStart="32dp"
+
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Active Scenario"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/active_security"
+        app:layout_constraintEnd_toEndOf="@+id/password_security"
+        app:layout_constraintStart_toStartOf="@+id/password_security"
+        app:layout_constraintTop_toBottomOf="@+id/password_security"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/active_security"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="32dp"
+
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/ok_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/back_btn_color"
+        android:text="Set"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+
+        app:layout_constraintBottom_toTopOf="@+id/send_to_module"
+        app:layout_constraintEnd_toEndOf="@+id/active_security"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="@+id/active_security"
+        app:layout_constraintTop_toBottomOf="@+id/active_security"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/send_to_module"
+        android:layout_width="@dimen/_80mdp"
+        android:layout_height="@dimen/_17mdp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+
+        android:background="@drawable/back_btn_color"
+        android:text="Send to Module"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ok_btn"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="@+id/ok_btn"
+        app:layout_constraintTop_toBottomOf="@+id/ok_btn"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout25"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.choose_sensor_work.select_work_sensor_curtain">
+
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Scenario"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="21dp"
+        tools:layout_conversion_absoluteWidth="266dp" />
+
+
+    <Button
+        android:id="@+id/sw_chose_scenario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/select_back"
+        android:text="select"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="266dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Functionality"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/sensor_functionality_open"
+        app:layout_constraintStart_toStartOf="@+id/sw_chose_scenario"
+        app:layout_constraintTop_toBottomOf="@+id/sw_chose_scenario"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_conversion_absoluteHeight="21dp"
+        tools:layout_conversion_absoluteWidth="266dp" />
+
+    <Button
+        android:id="@+id/sensor_functionality_open"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/functionality_open_anable_off"
+
+        app:layout_constraintBottom_toTopOf="@+id/sensor_functionality_close"
+        app:layout_constraintEnd_toEndOf="@+id/sw_chose_scenario"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/sw_chose_scenario"
+        app:layout_constraintTop_toBottomOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="266dp" />
+
+    <Button
+        android:id="@+id/sensor_functionality_close"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/functionality_close_anable_off"
+
+        app:layout_constraintBottom_toTopOf="@+id/sw_chose_scenario_sensor_ok"
+        app:layout_constraintEnd_toEndOf="@+id/sw_chose_scenario"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/sw_chose_scenario"
+        app:layout_constraintTop_toBottomOf="@+id/sensor_functionality_open"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="266dp" />
+
+
+    <Button
+        android:id="@+id/sw_chose_scenario_sensor_ok"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/back_btn_color"
+        android:text="OK"
+        android:textColor="@color/white"
+
+
+        android:textSize="@dimen/_7font_mdp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sw_chose_sensor_scenario_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/sensor_functionality_close"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.29"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="113dp" />
+
+    <Button
+        android:id="@+id/sw_chose_sensor_scenario_cancel"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+
+        android:background="@drawable/back_btn_color"
+        android:text="Cancel"
+
+        android:textColor="@color/white"
+
+        android:textSize="@dimen/_7font_mdp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/sw_chose_scenario_sensor_ok"
+        app:layout_constraintEnd_toStartOf="@+id/sw_chose_scenario_sensor_ok"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sw_chose_scenario_sensor_ok"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.29"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="113dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

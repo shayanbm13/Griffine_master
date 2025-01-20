@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<slide xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500">
+    <targets>
+        <target android:targetId="@android:id/statusBarBackground" />
+        <target android:targetId="@android:id/navigationBarBackground" />
+<!--        <target android:targetId="@id/appBarLayout" />-->
+<!--        <target android:targetId="@id/your_content_view" />-->
+    </targets>
+</slide>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.setting_simcaed_messgeresponse">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:text="Message Response"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scenaroi Response"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/scenario_response_input"
+                app:layout_constraintStart_toStartOf="@+id/scenario_response_input"
+                app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+            <EditText
+                android:id="@+id/scenario_response_input"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginLeft="@dimen/_3mdp"
+                android:background="@drawable/back_btn_color"
+                android:ems="15"
+                android:gravity="start|top"
+
+                android:inputType="textMultiLine"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/textView77"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintWidth_percent="0.95" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Module Response"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp"
+
+                app:layout_constraintBottom_toTopOf="@+id/module_response_input"
+                app:layout_constraintStart_toStartOf="@+id/scenario_response_input"
+                app:layout_constraintTop_toBottomOf="@+id/scenario_response_input" />
+
+            <EditText
+                android:id="@+id/module_response_input"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/back_btn_color"
+                android:ems="15"
+
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/texfftView77"
+                app:layout_constraintEnd_toEndOf="@+id/scenario_response_input"
+                app:layout_constraintHeight_percent="0.13"
+                app:layout_constraintStart_toStartOf="@+id/scenario_response_input"
+                app:layout_constraintTop_toBottomOf="@+id/textView77"
+                app:layout_constraintWidth_percent="0.95" />
+
+            <TextView
+                android:id="@+id/texfftView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sensor Response"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp"
+
+                app:layout_constraintBottom_toTopOf="@+id/sensor_response_input"
+                app:layout_constraintStart_toStartOf="@+id/module_response_input"
+                app:layout_constraintTop_toBottomOf="@+id/module_response_input" />
+
+            <EditText
+                android:id="@+id/sensor_response_input"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.95"
+                app:layout_constraintHeight_percent="0.13"
+                android:background="@drawable/back_btn_color"
+                android:ems="15"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/texfxftView77"
+                app:layout_constraintEnd_toEndOf="@+id/module_response_input"
+
+                app:layout_constraintStart_toStartOf="@+id/texfftView77"
+                app:layout_constraintTop_toBottomOf="@+id/texfftView77"
+                 />
+
+            <TextView
+                android:id="@+id/texfxftView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Response"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp"
+
+                app:layout_constraintBottom_toTopOf="@+id/security_response_input"
+                app:layout_constraintStart_toStartOf="@+id/sensor_response_input"
+                app:layout_constraintTop_toBottomOf="@+id/sensor_response_input" />
+
+            <EditText
+                android:id="@+id/security_response_input"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.95"
+                app:layout_constraintHeight_percent="0.13"
+                android:background="@drawable/back_btn_color"
+                android:ems="15"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/message_response_cancel"
+                app:layout_constraintEnd_toEndOf="@+id/sensor_response_input"
+
+                app:layout_constraintStart_toStartOf="@+id/sensor_response_input"
+                app:layout_constraintTop_toBottomOf="@+id/texfxftView77"
+                 />
+
+            <Button
+                android:id="@+id/message_response_cancel"
+                android:layout_width="@dimen/_40mdp"
+                android:layout_height="@dimen/_16mdp"
+                android:background="@drawable/cancel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/message_response_ok"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/security_response_input" />
+
+            <Button
+                android:id="@+id/message_response_ok"
+                android:layout_width="@dimen/_40mdp"
+                android:layout_height="@dimen/_16mdp"
+                android:background="@drawable/ok"
+                app:layout_constraintBottom_toBottomOf="@+id/message_response_cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/message_response_cancel"
+                app:layout_constraintTop_toTopOf="@+id/message_response_cancel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

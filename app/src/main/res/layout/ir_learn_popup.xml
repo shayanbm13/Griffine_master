@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popupback">
+
+
+    <ProgressBar
+        android:id="@+id/loding_step_one"
+        android:layout_width="@dimen/_10mdp"
+        android:layout_height="@dimen/_10mdp"
+        android:layout_marginLeft="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/_15mdp"
+
+        android:indeterminate="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loding_step_two"
+        android:layout_width="@dimen/_10mdp"
+        android:layout_height="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/_7mdp"
+
+        android:indeterminate="true"
+
+        app:layout_constraintEnd_toEndOf="@+id/loding_step_one"
+        app:layout_constraintStart_toStartOf="@+id/loding_step_one"
+        app:layout_constraintTop_toBottomOf="@+id/loding_step_one" />
+
+    <TextView
+        android:id="@+id/step_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10mdp"
+        android:text="Step 1 : click power on your control"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toBottomOf="@+id/loding_step_one"
+        app:layout_constraintStart_toEndOf="@+id/loding_step_one"
+        app:layout_constraintTop_toTopOf="@+id/loding_step_one" />
+
+    <TextView
+        android:id="@+id/step_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 2 : check to work"
+        android:textColor="@color/lb_grey"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toBottomOf="@+id/loding_step_two"
+        app:layout_constraintStart_toStartOf="@+id/step_one"
+        app:layout_constraintTop_toTopOf="@+id/loding_step_two" />
+
+    <TextView
+        android:id="@+id/check_learn_ir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12mdp"
+        android:text="Click Done if it works otherwise try again"
+        android:textColor="@color/lb_grey"
+        android:textSize="@dimen/_7font_mdp"
+
+        app:layout_constraintBottom_toTopOf="@+id/done_ir_learn"
+        app:layout_constraintStart_toStartOf="@+id/loding_step_two"
+        app:layout_constraintTop_toBottomOf="@+id/loding_step_two" />
+
+    <Button
+        android:id="@+id/done_ir_learn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5mdp"
+        android:layout_marginBottom="@dimen/_4mdp"
+        android:background="@drawable/back_btn_color"
+        android:textSize="@dimen/_8mdp"
+
+        android:fontFamily="@font/prompt_regular"
+        android:text="Done"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/try_again_ir_learn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_learn_ir"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.55" />
+
+    <Button
+        android:id="@+id/try_again_ir_learn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_20mdp"
+       android:textSize="@dimen/_8mdp"
+
+        android:background="@drawable/back_btn_color"
+        android:fontFamily="@font/prompt_regular"
+        android:text="Try again"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/done_ir_learn"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.55" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

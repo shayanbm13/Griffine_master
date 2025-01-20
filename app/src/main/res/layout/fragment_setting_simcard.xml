@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity=""
+    tools:context=".fragment.setting_two.setting_simcard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_gravity="top"
+
+
+
+
+        android:orientation="vertical"
+        >
+
+        <TextView
+
+            android:id="@+id/textView61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Simcard"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/simcard_security"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHeight_percent=".13"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/security_off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+        <Button
+            android:id="@+id/simcard_message_response"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".13"
+
+            android:layout_marginTop="8dp"
+
+            android:background="@drawable/message_response_off"
+            app:layout_constraintEnd_toEndOf="@+id/simcard_security"
+            app:layout_constraintStart_toStartOf="@+id/simcard_security"
+            app:layout_constraintTop_toBottomOf="@+id/simcard_security" />
+
+        <Button
+            android:id="@+id/simcard_account_security"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".13"
+
+            android:layout_marginTop="8dp"
+
+            android:background="@drawable/acc_security_off"
+            app:layout_constraintEnd_toEndOf="@+id/simcard_security"
+            app:layout_constraintStart_toStartOf="@+id/simcard_security"
+            app:layout_constraintTop_toBottomOf="@+id/simcard_message_response" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

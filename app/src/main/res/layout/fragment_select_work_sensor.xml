@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout23"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.setting_learn_sensor">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor"
+        android:textColor="@color/white"
+        android:textSize="8.82pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="29dp"
+        tools:layout_conversion_absoluteWidth="413dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ok"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout14"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        tools:layout_conversion_absoluteHeight="54dp"
+        tools:layout_conversion_absoluteWidth="112dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.077"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_btn_color"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="550dp">
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/local_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="Sensor 1"
+            android:textColor="@color/white"
+            android:textSize="12pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/local_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/sw_sensor_light"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+
+        android:background="@drawable/light_sensor_off"
+        app:layout_constraintBottom_toBottomOf="@+id/sw_sensor_plug"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sw_sensor_plug"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+        app:layout_constraintWidth_percent="0.4"
+        tools:layout_conversion_absoluteHeight="65dp"
+        tools:layout_conversion_absoluteWidth="207dp" />
+
+    <Button
+        android:id="@+id/sw_sensor_plug"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+
+
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/plug_sensor_off"
+        app:layout_constraintBottom_toTopOf="@+id/sw_sensor_curtain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sw_sensor_light"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+        app:layout_constraintWidth_percent="0.4"
+        tools:layout_conversion_absoluteHeight="65dp"
+        tools:layout_conversion_absoluteWidth="207dp" />
+
+    <Button
+        android:id="@+id/sw_sensor_curtain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+
+
+        android:background="@drawable/curtain_sensor_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sw_sensor_tempreture"
+        app:layout_constraintTop_toBottomOf="@+id/sw_sensor_plug"
+        app:layout_constraintWidth_percent="0.4"
+        tools:layout_conversion_absoluteHeight="65dp"
+        tools:layout_conversion_absoluteWidth="207dp" />
+
+    <Button
+        android:id="@+id/sw_sensor_tempreture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/temperature_sensor__off"
+
+        app:layout_constraintBottom_toBottomOf="@+id/sw_sensor_curtain"
+
+        app:layout_constraintEnd_toStartOf="@+id/sw_sensor_curtain"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_sensor_light"
+        app:layout_constraintWidth_percent="0.4"
+        tools:layout_conversion_absoluteHeight="65dp"
+        tools:layout_conversion_absoluteWidth="207dp" />
+
+    <Button
+        android:id="@+id/sw_sensor_valve"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+
+
+        android:layout_marginTop="3dp"
+
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/valve_sensor_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_sensor_curtain"
+        app:layout_constraintWidth_percent="0.5"
+        tools:layout_conversion_absoluteHeight="65dp"
+        tools:layout_conversion_absoluteWidth="207dp" />
+
+    <view
+        android:id="@+id/select_work_sensor_viewpager"
+        class="com.example.griffin.mudels.NonSwipeableViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="25dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_local"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_sensor_valve"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_conversion_absoluteHeight="675dp"
+        tools:layout_conversion_absoluteWidth="600dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

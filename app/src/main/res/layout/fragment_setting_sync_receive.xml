@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.setting_sync_receive">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive"
+                android:textSize="@dimen/_10font_mdp"
+                android:textColor="@color/white"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:layout_weight="3"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                app:layout_constraintHeight_percent="0.33"
+
+                android:text="Current Database Will \n Be Cleared , Proceed?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8font_mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/cance_receive"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"
+                android:scrollbarSize="@dimen/_8font_mdp"
+
+
+                android:textAllCaps="false"
+                android:background="@drawable/back_btn_color"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/ok_receive"
+                app:layout_constraintHeight_percent="0.155"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <Button
+                android:id="@+id/ok_receive"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="48dp"
+                android:background="@drawable/back_btn_color"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_8font_mdp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.155"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/cance_receive"
+                app:layout_constraintTop_toTopOf="@+id/cance_receive"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <TextView
+                android:id="@+id/connect_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+
+
+
+
+                android:text="Disconnected"
+
+                android:background="@drawable/back_btn_color"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8font_mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ok_receive"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="@+id/cance_receive"
+                app:layout_constraintTop_toBottomOf="@+id/cance_receive"
+                app:layout_constraintWidth_percent="0.4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:background="@drawable/background_local"
+            android:gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+
+                android:orientation="vertical"
+                android:paddingBottom="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="596dp"
+                tools:layout_conversion_absoluteWidth="1dp">
+
+                <TextView
+
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sender IP"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8font_mdp"
+                    app:layout_constraintBottom_toTopOf="@+id/sender_ip"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintWidth_percent="0.5"
+                    tools:layout_conversion_absoluteHeight="221dp"
+                    tools:layout_conversion_absoluteWidth="1dp" />
+
+                <TextView
+                    android:id="@+id/sender_ip"
+
+                    android:layout_width="0dp"
+                    android:clickable="false"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+
+                    android:background="@drawable/back_btn_color"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9font_mdp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:layout_conversion_absoluteHeight="28dp"
+                    tools:layout_conversion_absoluteWidth="1dp" />
+
+                <TextView
+
+                    android:id="@+id/textView11"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Receiving Steps"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8font_mdp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/receive_steps"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sender_ip"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintWidth_percent="0.5"
+                    tools:layout_conversion_absoluteHeight="365dp"
+                    tools:layout_conversion_absoluteWidth="1dp" />
+
+                <TextView
+                    android:id="@+id/receive_steps"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/back_btn_color"
+                    android:ems="10"
+
+
+                    android:inputType="textPersonName"
+
+
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+
+                    android:textSize="@dimen/_9font_mdp"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/textView12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:layout_conversion_absoluteHeight="28dp"
+                    tools:layout_conversion_absoluteWidth="1dp" />
+
+                <TextView
+
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Received"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8font_mdp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/received_status"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/receive_steps"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintWidth_percent="0.5"
+                    tools:layout_conversion_absoluteHeight="197dp"
+                    tools:layout_conversion_absoluteWidth="1dp" />
+
+                <TextView
+                    android:id="@+id/received_status"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+                    android:background="@drawable/back_btn_color"
+                    android:ems="10"
+                    android:textSize="@dimen/_9font_mdp"
+
+                    android:inputType="textPersonName"
+
+
+                    android:textAlignment="center"
+
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    app:layout_constraintVertical_bias="0.5"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="1dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

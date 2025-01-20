@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".griffin_home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/griffin_home_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/fazaye_entekhab_ei"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/room_image_home"
+            app:layout_constraintHeight_percent="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.37"
+            tools:layout_conversion_absoluteHeight="182dp"
+            tools:layout_conversion_absoluteWidth="394dp">
+
+
+            <TextView
+                android:id="@+id/temp_textview_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:text="--°"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/weather_text_h"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/weather_image_h"
+                tools:layout_conversion_absoluteHeight="50dp"
+                tools:layout_conversion_absoluteWidth="50dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+
+                android:layout_marginBottom="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.09"
+                app:layout_constraintStart_toStartOf="@+id/weather_text_h"
+                app:layout_constraintTop_toBottomOf="@+id/weather_text_h"
+                app:layout_constraintWidth_percent="0.09"
+                app:srcCompat="@drawable/icon_wifi"
+                tools:layout_conversion_absoluteHeight="27dp"
+                tools:layout_conversion_absoluteWidth="44dp" />
+
+            <TextView
+                android:id="@+id/weather_text_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="-------"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/temp_textview_h"
+                app:layout_constraintTop_toBottomOf="@+id/temp_textview_h"
+                tools:layout_conversion_absoluteHeight="38dp"
+                tools:layout_conversion_absoluteWidth="53dp" />
+
+
+            <TextView
+                android:id="@+id/internetconection_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+
+                android:gravity="bottom"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8font_mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="22dp"
+                tools:layout_conversion_absoluteWidth="1dp" />
+
+            <TextView
+                android:id="@+id/clockid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="16dp"
+                android:text="82:20 AM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20font_mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.228"
+                tools:layout_conversion_absoluteHeight="49dp"
+                tools:layout_conversion_absoluteWidth="153dp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="5dp"
+
+
+                android:gravity="right"
+
+                android:paddingRight="5dp"
+                android:text="7"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20font_mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/namedate"
+                app:layout_constraintEnd_toStartOf="@+id/namedate"
+                app:layout_constraintTop_toTopOf="@+id/namedate"
+                app:layout_constraintVertical_bias="0.47"
+                tools:layout_conversion_absoluteHeight="75dp"
+                tools:layout_conversion_absoluteWidth="57dp" />
+
+            <TextView
+                android:id="@+id/namedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+
+                android:text="Satureday \nMay2023"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9font_mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/weather_image_h"
+                app:layout_constraintEnd_toEndOf="@+id/clockid"
+                app:layout_constraintTop_toBottomOf="@+id/clockid"
+                app:layout_constraintVertical_bias="0.125"
+                tools:layout_conversion_absoluteHeight="41dp"
+                tools:layout_conversion_absoluteWidth="96dp" />
+
+            <ImageView
+                android:id="@+id/weather_image_h"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/clockid"
+
+
+                app:layout_constraintHeight_percent="0.7"
+                app:layout_constraintStart_toEndOf="@+id/weather_text_h"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                app:srcCompat="@drawable/weather_no_internet"
+                tools:ignore="UnknownId"
+                tools:layout_conversion_absoluteHeight="182dp"
+                tools:layout_conversion_absoluteWidth="121dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/room_image_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/fazaye_weather"
+            android:gravity="center"
+
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toTopOf="@+id/camera_home"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintHeight_percent=".45"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+
+            tools:layout_conversion_absoluteHeight="396dp"
+            tools:layout_conversion_absoluteWidth="394dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_conversion_absoluteHeight="4dp"
+                tools:layout_conversion_absoluteWidth="394dp">
+
+                <Button
+                    android:id="@+id/previous_room_home"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+
+
+                    android:background="@drawable/jahat"
+                    android:rotation="180"
+                    app:layout_constraintBottom_toBottomOf="@+id/next_room_home"
+                    app:layout_constraintEnd_toStartOf="@+id/next_room_home"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/next_room_home"
+                    app:layout_constraintWidth_percent="0.15"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_conversion_absoluteHeight="45dp"
+                    tools:layout_conversion_absoluteWidth="45dp" />
+
+                <Button
+                    android:id="@+id/next_room_home"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/jahat"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.15"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.15"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_conversion_absoluteHeight="45dp"
+                    tools:layout_conversion_absoluteWidth="45dp" />
+
+                <TextView
+                    android:id="@+id/room_name_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12font_mdp"
+                    app:layout_constraintBottom_toTopOf="@+id/previous_room_home"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.344"
+                    tools:layout_conversion_absoluteHeight="45dp"
+                    tools:layout_conversion_absoluteWidth="210dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/back_to_dashboard_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/back_to_dashboard"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_setting_h"
+
+            app:layout_constraintEnd_toStartOf="@+id/btn_setting_h"
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/room_image_home"
+            app:layout_constraintTop_toTopOf="@+id/btn_setting_h"
+            app:layout_constraintWidth_percent="0.085"
+            tools:layout_conversion_absoluteHeight="151dp"
+            tools:layout_conversion_absoluteWidth="82dp" />
+
+        <Button
+            android:id="@+id/btn_setting_h"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/setting"
+            app:layout_constraintBottom_toBottomOf="@+id/intercom_home"
+
+            app:layout_constraintEnd_toStartOf="@+id/intercom_home"
+
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/back_to_dashboard_home"
+            app:layout_constraintTop_toTopOf="@+id/camera_home"
+            app:layout_constraintWidth_percent="0.085"
+            tools:layout_conversion_absoluteHeight="151dp"
+            tools:layout_conversion_absoluteWidth="76dp" />
+
+        <Button
+            android:id="@+id/intercom_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/iphone_h"
+            app:layout_constraintBottom_toBottomOf="@+id/camera_home"
+            app:layout_constraintEnd_toStartOf="@+id/camera_home"
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_setting_h"
+            app:layout_constraintTop_toTopOf="@+id/camera_home"
+            app:layout_constraintWidth_percent="0.085"
+            tools:layout_conversion_absoluteHeight="151dp"
+            tools:layout_conversion_absoluteWidth="81dp" />
+
+
+        <Button
+            android:id="@+id/camera_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/camera_h"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/room_image_home"
+            app:layout_constraintHeight_percent="0.232"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/intercom_home"
+
+            app:layout_constraintTop_toBottomOf="@+id/room_image_home"
+            app:layout_constraintWidth_percent="0.085"
+            tools:layout_conversion_absoluteHeight="151dp"
+            tools:layout_conversion_absoluteWidth="81dp" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout27"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/fazaye_weather"
+            android:paddingBottom="15dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/room_image_home"
+            app:layout_constraintEnd_toStartOf="@+id/choosed_layout"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="0.27"
+            tools:layout_conversion_absoluteHeight="571dp"
+            tools:layout_conversion_absoluteWidth="280dp">
+
+
+            <ImageButton
+                android:id="@+id/choose_device_item_menu"
+                android:layout_width="@dimen/_17mdp"
+                android:layout_height="@dimen/_16mdp"
+                android:layout_marginEnd="16dp"
+
+
+                android:background="@drawable/threepoint_pupapmenu"
+
+
+                android:enabled="false"
+
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/choosed_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/choosed_title" />
+
+            <Button
+                android:id="@+id/device_light"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/chose_device_light_off"
+                android:enabled="false"
+
+
+                android:paddingLeft="23dp"
+
+                android:paddingRight="20dp"
+                android:textAlignment="viewStart"
+
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+
+                android:textSize="11pt"
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+
+
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHeight_percent="0.11"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/choosed_title"
+
+                 />
+
+            <Button
+                android:id="@+id/device_temp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/chose_device_temp_off"
+                android:enabled="false"
+                android:paddingLeft="23dp"
+
+                android:paddingRight="20dp"
+
+                android:visibility="gone"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+
+
+                app:layout_constraintEnd_toEndOf="@+id/device_light"
+
+                app:layout_constraintHeight_percent="0.11"
+
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/device_light"
+                app:layout_constraintTop_toBottomOf="@+id/device_light"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <Button
+                android:id="@+id/device_curtain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/chose_device_curtain_off"
+                android:enabled="false"
+                android:paddingLeft="23dp"
+
+                android:paddingRight="20dp"
+
+
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+
+                android:textSize="11pt"
+                android:visibility="gone"
+
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@+id/device_temp"
+
+                app:layout_constraintHeight_percent="0.11"
+
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/device_temp"
+                app:layout_constraintTop_toBottomOf="@+id/device_temp"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <Button
+                android:id="@+id/device_plug"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/chose_device_plug_off"
+                android:enabled="false"
+                android:paddingLeft="23dp"
+
+                android:paddingRight="20dp"
+                android:textAlignment="viewStart"
+
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="11pt"
+
+                android:visibility="gone"
+
+                app:layout_constrainedHeight="true"
+
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@+id/device_curtain"
+                app:layout_constraintHeight_percent="0.11"
+
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintStart_toStartOf="@+id/device_curtain"
+                app:layout_constraintTop_toBottomOf="@+id/device_curtain"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <Button
+                android:id="@+id/device_valve"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/chose_device_valve_off"
+                android:enabled="false"
+                android:paddingLeft="23dp"
+
+                android:paddingRight="20dp"
+                android:textAlignment="viewStart"
+
+
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+
+                android:textSize="11pt"
+
+                android:visibility="gone"
+
+                app:layout_constrainedHeight="true"
+
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@+id/device_plug"
+                app:layout_constraintHeight_percent="0.11"
+
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintStart_toStartOf="@+id/device_plug"
+                app:layout_constraintTop_toBottomOf="@+id/device_plug"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <Button
+                android:id="@+id/device_fan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/chose_device_fan_off"
+                android:enabled="false"
+                android:paddingLeft="23dp"
+                android:paddingRight="20dp"
+                android:textAlignment="viewStart"
+
+                android:textAllCaps="false"
+                app:layout_constraintHeight_percent="0.11"
+                app:layout_constraintWidth_percent="0.9"
+                android:textColor="@color/white"
+
+                android:textSize="11pt"
+                android:visibility="gone"
+
+
+                app:layout_constrainedHeight="true"
+
+                app:layout_constrainedWidth="true"
+
+                app:layout_constraintEnd_toEndOf="@+id/device_valve"
+
+
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintStart_toStartOf="@+id/device_valve"
+                app:layout_constraintTop_toBottomOf="@+id/device_valve"
+                 />
+
+            <TextView
+
+                android:id="@+id/choosed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25mdp"
+
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Choose \nyour Device"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- Buttons for different tasks can be added here -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout26"
+            android:layout_width="0dp"
+
+            android:layout_height="0dp"
+
+            android:background="@drawable/center_bottom_setting_background"
+            android:gravity="center"
+
+            app:layout_constraintBottom_toBottomOf="@+id/camera_home"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout27"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout27"
+
+            app:layout_constraintTop_toTopOf="@+id/camera_home"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_conversion_absoluteHeight="157dp"
+            tools:layout_conversion_absoluteWidth="280dp">
+
+
+            <Button
+
+                android:id="@+id/btn_arme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="593dp"
+
+                android:layout_marginLeft="593dp"
+                android:layout_marginEnd="116dp"
+
+
+                android:layout_marginRight="116dp"
+                android:background="@drawable/icon_arme"
+                android:fontFamily="@font/prompt_regular"
+                android:gravity="center"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_disarme"
+                app:layout_constraintEnd_toStartOf="@+id/btn_disarme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_disarme"
+                tools:ignore="RtlCompat" />
+
+
+            <Button
+
+                android:id="@+id/btn_disarme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+
+                android:layout_marginEnd="117dp"
+                android:layout_marginRight="117dp"
+
+
+                android:background="@drawable/icon_disarme"
+
+
+                android:gravity="top"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_sleep"
+                app:layout_constraintEnd_toStartOf="@+id/btn_sleep"
+                app:layout_constraintStart_toEndOf="@+id/btn_arme"
+                app:layout_constraintTop_toTopOf="@+id/btn_sleep"
+                tools:ignore="RtlCompat" />
+
+
+            <Button
+
+                android:id="@+id/btn_sleep"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+
+
+                android:layout_marginTop="273dp"
+
+
+                android:background="@drawable/icon_sleep"
+
+
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_disarme"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat" />
+
+
+            <Button
+                android:id="@+id/on_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="@dimen/_4mdp"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+
+                android:background="@drawable/set_background"
+                android:fontFamily="@font/prompt_regular"
+                android:text="On"
+                android:textColor="#EEFFFFFF"
+
+                android:textSize="@dimen/_11font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/off_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.22"
+
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                tools:layout_conversion_absoluteHeight="54dp"
+                tools:layout_conversion_absoluteWidth="361dp" />
+
+            <Button
+                android:id="@+id/off_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/set_background"
+                android:fontFamily="@font/prompt_regular"
+                android:text="Off"
+
+                android:textColor="#EEFFFFFF"
+                android:textSize="@dimen/_11font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/third_status"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHeight_percent="0.22"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/on_status"
+                app:layout_constraintWidth_percent="0.8"
+                tools:layout_conversion_absoluteHeight="54dp"
+                tools:layout_conversion_absoluteWidth="361dp" />
+
+
+            <Button
+                android:id="@+id/third_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="@dimen/_4mdp"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:visibility="gone"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/set_background"
+                android:fontFamily="@font/prompt_regular"
+                android:text="Mid"
+                android:textColor="#EEFFFFFF"
+
+                android:textSize="@dimen/_11font_mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.22"
+
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/off_status"
+                app:layout_constraintWidth_percent="0.8"
+                tools:layout_conversion_absoluteHeight="54dp"
+                tools:layout_conversion_absoluteWidth="361dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/choosed_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/fazaye_weather"
+            app:layout_constraintBottom_toTopOf="@+id/musicplayer_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.65"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout27"
+            app:layout_constraintWidth_percent="0.32"
+            tools:layout_conversion_absoluteHeight="0"
+            tools:layout_conversion_absoluteWidth="317dp">
+
+            <view
+                android:id="@+id/frag_home_2"
+                class="com.example.griffin.mudels.NonSwipeableViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.435"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="516dp"
+                tools:layout_conversion_absoluteWidth="317dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/musicplayer_layout"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/fazaye_entekhab_ei"
+            android:orientation="horizontal"
+
+            android:paddingTop="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout26"
+            app:layout_constraintEnd_toEndOf="@+id/choosed_layout"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/choosed_layout"
+            app:layout_constraintTop_toBottomOf="@+id/choosed_layout"
+            tools:layout_conversion_absoluteHeight="210dp"
+            tools:layout_conversion_absoluteWidth="317dp">
+
+
+            <Button
+                android:id="@+id/show_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+
+
+                android:background="@drawable/music_list"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.31"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/previus_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/n_p_music"
+                app:layout_constraintBottom_toBottomOf="@+id/show_musics"
+
+                app:layout_constraintEnd_toStartOf="@+id/next_musics"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toEndOf="@+id/show_musics"
+                app:layout_constraintTop_toTopOf="@+id/show_musics"
+                app:layout_constraintWidth_percent="0.19"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout25"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/music_07"
+
+                android:gravity="center_vertical"
+
+
+                android:outlineSpotShadowColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="@+id/show_musics"
+                app:layout_constraintTop_toBottomOf="@+id/show_musics"
+                app:layout_constraintWidth_percent="0.7"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.02"
+                    android:background="@drawable/music_valume"
+
+                    />
+
+                <com.example.griffin.mudels.CustomSeekBar
+
+                    android:id="@+id/lineSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:progressDrawable="@drawable/custom_thumb"
+
+                    android:thumbTint="#00FFFFFF"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/n_p_music"
+
+
+                android:rotation="180"
+                app:layout_constraintBottom_toBottomOf="@+id/previus_musics"
+                app:layout_constraintEnd_toEndOf="@+id/play_puse_musics"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/play_puse_musics"
+                app:layout_constraintTop_toTopOf="@+id/previus_musics"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.19"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/play_puse_musics"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/play_music"
+
+
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout25"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout25"
+                app:layout_constraintWidth_percent="0.19"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

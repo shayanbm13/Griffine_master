@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout39"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp">
+
+
+    <TextView
+
+        android:id="@+id/choosed_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25mdp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="11dp"
+
+
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="19dp"
+        android:text="Choose \nyour Plug"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/plug_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/choose_device_item_menu"
+        android:layout_width="@dimen/_17mdp"
+        android:layout_height="@dimen/_12mdp"
+        android:background="@drawable/threepoint_pupapmenu"
+        android:enabled="false"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20mdp"
+
+        android:layout_marginEnd="25dp"
+
+        android:layout_marginBottom="12dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/choosed_title"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toEndOf="@+id/choosed_title"
+        app:layout_constraintTop_toTopOf="@+id/choosed_title"
+        app:layout_constraintWidth_percent="0.1" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/plug_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_3mdp"
+
+        android:layout_marginLeft="@dimen/_3mdp"
+
+        android:layout_marginEnd="@dimen/_3mdp"
+        android:layout_marginRight="@dimen/_3mdp"
+        android:layout_marginBottom="@dimen/_10mdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosed_title"
+        app:spanCount="1"
+        tools:listitem="@layout/styles_image" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout40"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6"
+        android:background="@drawable/background_local"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plug_recyclerview">
+
+
+        <TextView
+            android:id="@+id/temp_disconnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Disconnected..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20font_mdp"
+            android:visibility="gone"
+
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/plug_layout"
+            android:layout_width="373dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="2"
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:id="@+id/choosedss_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="Touch to turn on"
+
+                android:textColor="@color/white"
+
+
+                android:textSize="@dimen/_11font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/plug_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/plug_status"
+                android:layout_width="@dimen/_42mdp"
+                android:layout_height="@dimen/_42mdp"
+                android:background="@drawable/coler_off"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.194" />
+
+            <TextView
+
+                android:id="@+id/dfsfs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+
+
+                android:text="Display\nTimetable"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9font_mdp"
+
+                app:layout_constraintEnd_toEndOf="@+id/plug_status"
+                app:layout_constraintStart_toStartOf="@+id/plug_status"
+                app:layout_constraintTop_toBottomOf="@+id/plug_status" />
+
+            <TextView
+                android:id="@+id/timetable_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/back_btn_2"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingTop="2dp"
+
+
+                android:paddingRight="3dp"
+                android:paddingBottom="2dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:text="@null"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_7font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/timetable_2"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.085"
+
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dfsfs"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <TextView
+                android:id="@+id/timetable_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/back_btn_2"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="2dp"
+                android:text="@null"
+                android:textColor="@color/white"
+
+                android:textSize="@dimen/_7font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/timetable_3"
+                app:layout_constraintEnd_toEndOf="@+id/timetable_1"
+                app:layout_constraintHeight_percent="0.085"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/timetable_1"
+                app:layout_constraintTop_toBottomOf="@+id/timetable_1"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <TextView
+                android:id="@+id/timetable_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/back_btn_2"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="2dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:text="@null"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_7font_mdp"
+                app:layout_constraintBottom_toTopOf="@+id/timetable_4"
+                app:layout_constraintEnd_toEndOf="@+id/timetable_2"
+                app:layout_constraintHeight_percent="0.085"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/timetable_2"
+                app:layout_constraintTop_toBottomOf="@+id/timetable_2"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <TextView
+                android:id="@+id/timetable_4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/back_btn_2"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="2dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:text="@null"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_7font_mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/timetable_3"
+                app:layout_constraintHeight_percent="0.085"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/timetable_3"
+                app:layout_constraintTop_toBottomOf="@+id/timetable_3"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <ImageButton
+                android:id="@+id/set_timer_plug_item_menu"
+                android:layout_width="@dimen/_17mdp"
+                android:layout_height="@dimen/_12mdp"
+
+                android:layout_marginTop="116dp"
+
+
+                android:layout_weight="1"
+
+                android:background="@drawable/threepoint_pupapmenu"
+                android:enabled="false"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.91"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

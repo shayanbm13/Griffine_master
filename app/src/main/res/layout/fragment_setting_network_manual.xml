@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.setting_network_manual">
+
+
+    <TextView
+
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Manual"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:text="Modem SSID"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/setting_manual_modem_ssid"
+        app:layout_constraintStart_toStartOf="@+id/setting_manual_modem_ssid"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/setting_manual_modem_ssid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:hint="Modem SSID"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Modem Password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/setting_manual_modem_password"
+        app:layout_constraintStart_toStartOf="@+id/setting_manual_modem_password"
+        app:layout_constraintTop_toBottomOf="@+id/setting_manual_modem_ssid"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/setting_manual_modem_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:hint="Modem Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="API Key"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/setting_manual_api_key"
+        app:layout_constraintStart_toStartOf="@+id/setting_manual_api_key"
+        app:layout_constraintTop_toBottomOf="@+id/setting_manual_modem_password"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/setting_manual_api_key"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:hint="API Key"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        android:text="5dab3c5870888bb3ee81e939fc4d4dcc"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="City Name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/setting_manual_cityname"
+        app:layout_constraintStart_toStartOf="@+id/setting_manual_cityname"
+        app:layout_constraintTop_toBottomOf="@+id/setting_manual_api_key"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/setting_manual_cityname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:hint="City Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_2mdp"
+        android:paddingRight="@dimen/_2mdp"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/ok_btn_manual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/ok_btn_manual"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+        android:layout_marginTop="24dp"
+
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/back_btn_color"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintTop_toBottomOf="@+id/setting_manual_cityname"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/cancel_btn_manual"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_17mdp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/back_btn_color"
+
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ok_btn_manual"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

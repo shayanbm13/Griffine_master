@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp">
+
+
+    <TextView
+
+        android:id="@+id/choosed_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25mdp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="11dp"
+
+
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="19dp"
+        android:text="Choose \nyour Curtain"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/curtain_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/choose_device_item_menu"
+        android:layout_width="@dimen/_17mdp"
+        android:layout_height="@dimen/_12mdp"
+        android:layout_marginRight="@dimen/_10mdp"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintWidth_percent="0.1"
+
+        android:background="@drawable/threepoint_pupapmenu"
+
+
+        android:enabled="false"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/choosed_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choosed_title"
+        app:layout_constraintTop_toTopOf="@+id/choosed_title"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/curtain_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosed_title"
+        app:spanCount="1"
+        tools:listitem="@layout/styles_image" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6"
+        android:background="@drawable/background_local"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curtain_recyclerview">
+
+        <TextView
+            android:id="@+id/temp_disconnected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Disconnected..."
+            android:textColor="@color/white"
+            android:textSize="37dp"
+            android:visibility="gone"
+
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/curtain_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="2"
+            android:visibility="gone">
+
+            <TextView
+
+                android:id="@+id/choosedss_title"
+                android:layout_width="163dp"
+                android:layout_height="@dimen/_25mdp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="5"
+                android:text="Choose \nyour mode"
+                android:textColor="@color/white"
+
+
+                android:textSize="@dimen/_10font_mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/curtain_open"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/curtain_open_off"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/curtain_mid"
+                app:layout_constraintHorizontal_bias="0.325"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/curtain_mid"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintWidth_percent="0.25"
+                android:background="@drawable/curtain_mid_off"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/curtain_close"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintWidth_percent="0.25"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="36dp"
+
+                android:background="@drawable/curtain_close_off"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/curtain_mid"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.setting_four.setting_simcard_accountsecurity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textView64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Security"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/_90mdp"
+            android:layout_height="@dimen/_22mdp"
+            android:background="@drawable/back_btn_color"
+            android:text="SMS Answer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            android:fontFamily="@font/prompt_regular"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView64"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sms_answer_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:gravity="bottom"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+
+            app:layout_constraintBottom_toBottomOf="@+id/button3"
+
+            app:track="@drawable/switch_track"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.26"
+            app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintTop_toTopOf="@+id/button3"
+            app:layout_constraintVertical_bias="0.714"
+            app:layout_constraintWidth_percent="0.655"
+
+             />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Phone Number"
+            android:layout_marginTop="@dimen/_15mdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11font_mdp"
+            app:layout_constraintBottom_toTopOf="@+id/admin_phone_number_input"
+            app:layout_constraintStart_toStartOf="@+id/admin_phone_number_input"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <EditText
+            android:id="@+id/admin_phone_number_input"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.055"
+            android:background="@drawable/back_btn_color"
+            android:ems="15"
+            android:inputType="textPersonName"
+            android:paddingLeft="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView77"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back Up Phone Numbers"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11font_mdp"
+
+            android:layout_marginTop="@dimen/_15mdp"
+            app:layout_constraintBottom_toTopOf="@+id/backup1_phone_number_input"
+            app:layout_constraintStart_toStartOf="@+id/admin_phone_number_input"
+            app:layout_constraintTop_toBottomOf="@+id/admin_phone_number_input" />
+
+        <EditText
+            android:id="@+id/backup1_phone_number_input"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.055"
+            android:background="@drawable/back_btn_color"
+            android:ems="15"
+            android:inputType="textPersonName"
+
+            android:paddingLeft="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/backup3_phone_number_input"
+            app:layout_constraintEnd_toEndOf="@+id/admin_phone_number_input"
+            app:layout_constraintStart_toStartOf="@+id/admin_phone_number_input"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <EditText
+            android:id="@+id/backup2_phone_number_input"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.055"
+            android:background="@drawable/back_btn_color"
+            android:ems="15"
+            android:inputType="textPersonName"
+            android:paddingLeft="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/account_security_cancel"
+            app:layout_constraintEnd_toEndOf="@+id/backup4_phone_number_input"
+            app:layout_constraintStart_toStartOf="@+id/backup4_phone_number_input"
+            app:layout_constraintTop_toBottomOf="@+id/backup4_phone_number_input" />
+
+        <EditText
+            android:id="@+id/backup3_phone_number_input"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.055"
+            android:background="@drawable/back_btn_color"
+            android:ems="15"
+            android:inputType="textPersonName"
+            android:paddingLeft="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/backup4_phone_number_input"
+            app:layout_constraintEnd_toEndOf="@+id/backup1_phone_number_input"
+            app:layout_constraintStart_toStartOf="@+id/backup1_phone_number_input"
+            app:layout_constraintTop_toBottomOf="@+id/backup1_phone_number_input" />
+
+        <EditText
+            android:id="@+id/backup4_phone_number_input"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.055"
+            android:background="@drawable/back_btn_color"
+            android:ems="15"
+            android:inputType="textPersonName"
+            android:paddingLeft="7dp"
+            app:layout_constraintBottom_toTopOf="@+id/backup2_phone_number_input"
+            app:layout_constraintEnd_toEndOf="@+id/backup3_phone_number_input"
+            app:layout_constraintStart_toStartOf="@+id/backup3_phone_number_input"
+            app:layout_constraintTop_toBottomOf="@+id/backup3_phone_number_input" />
+
+        <Button
+            android:id="@+id/account_security_cancel"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_15mdp"
+            android:background="@drawable/back_btn_color"
+            android:textSize="@dimen/_7font_mdp"
+            android:layout_marginBottom="@dimen/_5mdp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/account_security_ok"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/account_security_ok"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_15mdp"
+            android:background="@drawable/back_btn_color"
+            android:textSize="@dimen/_7font_mdp"
+            android:text="OK"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/account_security_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/account_security_cancel"
+            app:layout_constraintTop_toTopOf="@+id/account_security_cancel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

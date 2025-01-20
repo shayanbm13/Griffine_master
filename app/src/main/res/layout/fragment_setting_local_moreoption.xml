@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_three.setting_local_moreoption">
+
+
+    <TextView
+
+        android:id="@+id/textView29"
+        android:layout_width="377dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="More option"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/send_to_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_to_key_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/rename"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+
+
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rename_background"
+        app:layout_constraintBottom_toTopOf="@+id/more_option_dalate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.26"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/more_option_dalate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        android:background="@drawable/delete_background"
+        app:layout_constraintBottom_toTopOf="@+id/more_option_find"
+        app:layout_constraintEnd_toEndOf="@+id/rename"
+        app:layout_constraintHeight_percent="0.26"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rename"
+        app:layout_constraintTop_toBottomOf="@+id/rename" />
+
+    <Button
+        android:id="@+id/more_option_find"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        android:background="@drawable/find_multyfunctional"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/more_option_dalate"
+        app:layout_constraintHeight_percent="0.26"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/more_option_dalate"
+        app:layout_constraintTop_toBottomOf="@+id/more_option_dalate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

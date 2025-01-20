@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout29"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_four.choose_door_work.select_work_coding">
+
+
+    <TextView
+        android:id="@+id/texdsdtwerView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Admin Password"
+        android:textSize="@dimen/_8font_mdp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextssdfsPersonName3"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextssdfsPersonName3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="106dp" />
+
+    <EditText
+        android:id="@+id/editTextTextssdfsPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texdsdtwerView6"
+        app:layout_constraintWidth_percent="0.45"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="170dp" />
+
+
+    <TextView
+        android:id="@+id/texwrweffwtView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_8font_mdp"
+        android:layout_marginStart="16dp"
+        android:text="Card ID"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextssdfsPersonName3"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="160dp" />
+
+    <EditText
+        android:id="@+id/editTextTextsfsPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/_9font_mdp"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/texwrweffwtView6"
+        app:layout_constraintTop_toBottomOf="@+id/texwrweffwtView6"
+        app:layout_constraintWidth_percent="0.45"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="160dp" />
+
+    <TextView
+        android:id="@+id/textwerView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Password"
+        android:textSize="@dimen/_8font_mdp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextsfsPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextsfsPersonName3"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="160dp" />
+
+    <EditText
+        android:id="@+id/editTextTewwerxtdsfsPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="15"
+        android:textSize="@dimen/_9font_mdp"
+        android:inputType="textPersonName"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/textwerView6"
+        app:layout_constraintTop_toBottomOf="@+id/textwerView6"
+        app:layout_constraintWidth_percent="0.45"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="160dp" />
+
+    <TextView
+        android:id="@+id/textVfsiew6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Select Dor"
+        android:textSize="@dimen/_8font_mdp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/editTextTewwerxtdsfsPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTewwerxtdsfsPersonName3"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="160dp" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPerfsdeesonName3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="15"
+        android:textSize="@dimen/_9font_mdp"
+        android:inputType="textPersonName"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="@+id/textVfsiew6"
+        app:layout_constraintTop_toBottomOf="@+id/textVfsiew6"
+        app:layout_constraintWidth_percent="0.45"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="160dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="4dp"
+        android:background="@drawable/add_off"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextsfsPersonName3"
+
+        app:layout_constraintEnd_toStartOf="@+id/button41"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextsfsPersonName3"
+        app:layout_constraintWidth_percent="0.22" />
+
+    <Button
+        android:id="@+id/button41"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/remove_off"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintWidth_percent="0.22"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="90dp" />
+
+
+    <TextView
+        android:id="@+id/texwrwewtView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_8font_mdp"
+        android:text="Add Senario"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTewwerxtPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextTewwerxtPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/textwerView6"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="75dp" />
+
+    <EditText
+        android:id="@+id/editTextTewwerxtPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_btn_color"
+        android:textSize="@dimen/_9font_mdp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTewwerxtdsfsPersonName3"
+        app:layout_constraintEnd_toEndOf="@+id/button41"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toEndOf="@+id/editTextTewwerxtdsfsPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTewwerxtdsfsPersonName3"
+        app:layout_constraintWidth_percent="0.45"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="170dp" />
+
+    <Button
+        android:id="@+id/button38"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ok"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPerfsdeesonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.24"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPerfsdeesonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPerfsdeesonName3"
+
+        tools:layout_conversion_absoluteHeight="54dp"
+        tools:layout_conversion_absoluteWidth="113dp" />
+
+    <Button
+        android:id="@+id/button37"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.65"
+        app:layout_constraintHeight_percent="0.13"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/send_to_module_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPerfsdeesonName3"
+        tools:layout_conversion_absoluteHeight="54dp"
+        tools:layout_conversion_absoluteWidth="302dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

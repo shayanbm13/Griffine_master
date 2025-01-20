@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout42"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/popupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Your Lights"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="25dp"
+        tools:layout_conversion_absoluteWidth="126dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout45"
+        android:background="@drawable/termo_off"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+
+
+        android:gravity="top"
+        app:layout_constraintEnd_toEndOf="@+id/popupText"
+        app:layout_constraintHeight_percent="0.22"
+        app:layout_constraintStart_toStartOf="@+id/popupText"
+        app:layout_constraintTop_toBottomOf="@+id/popupText"
+        app:layout_constraintWidth_percent="0.3">
+
+        <TextView
+            android:id="@+id/thermo_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11font_mdp"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/less_thermo"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/jahat"
+        android:gravity="left"
+        android:rotation="90"
+        app:layout_constraintEnd_toStartOf="@+id/more_thermo"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout45"
+        app:layout_constraintWidth_percent="0.15"
+        tools:layout_conversion_absoluteHeight="90dp"
+        tools:layout_conversion_absoluteWidth="90dp" />
+
+    <Button
+        android:id="@+id/more_thermo"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintWidth_percent="0.15"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/jahat"
+
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="@+id/less_thermo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/less_thermo"
+        app:layout_constraintTop_toTopOf="@+id/less_thermo"
+        tools:layout_conversion_absoluteHeight="90dp"
+        tools:layout_conversion_absoluteWidth="90dp" />
+
+
+    <Button
+        android:id="@+id/closeButton_thermo"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+        android:layout_marginTop="24dp"
+        android:textSize="@dimen/_7font_mdp"
+        android:background="@drawable/back_btn_color"
+        android:text="OK"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/more_thermo"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@+id/less_thermo"
+        app:layout_constraintTop_toBottomOf="@+id/less_thermo"
+        app:layout_constraintWidth_percent="0.25"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

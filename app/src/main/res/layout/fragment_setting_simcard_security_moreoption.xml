@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.setting_three.setting_simcard_security_moreoption">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Simcard Info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sim_username_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Username:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8font_mdp"
+            app:layout_constraintBottom_toTopOf="@+id/sim_password_info"
+            app:layout_constraintStart_toStartOf="@+id/textView62"
+            app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+        <TextView
+            android:id="@+id/sim_password_info"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Password:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8font_mdp"
+            app:layout_constraintBottom_toTopOf="@+id/sim_number_info"
+            app:layout_constraintStart_toStartOf="@+id/sim_username_info"
+            app:layout_constraintTop_toBottomOf="@+id/sim_username_info" />
+
+        <TextView
+            android:id="@+id/sim_number_info"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/sim_password_info"
+            app:layout_constraintTop_toBottomOf="@+id/sim_password_info" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

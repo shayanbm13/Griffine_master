@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_300mdp"
+    android:layout_height="@dimen/_300mdp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popupback">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14font_mdp"
+        android:text="Undone Scenarios :"
+        android:layout_marginBottom="10dp">
+
+    </TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/undone_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        >
+
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/counterr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="17dp"
+
+        android:textColor="@color/white"
+        >
+
+
+    </TextView>
+    <Button
+        android:id="@+id/ok_done"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="15dp"
+        android:background="@drawable/back_btn_color"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:textSize="@dimen/_7font_mdp"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout34"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/popupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Your fan"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="25dp"
+        tools:layout_conversion_absoluteWidth="103dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout36"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        app:layout_constraintHeight_percent="0.22"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/fan_of"
+        android:gravity="top"
+
+
+        android:paddingTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/popupText"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/popupText"
+        app:layout_constraintTop_toBottomOf="@+id/popupText"
+        tools:layout_conversion_absoluteHeight="123dp"
+        tools:layout_conversion_absoluteWidth="123dp">
+
+        <TextView
+            android:id="@+id/fan_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11font_mdp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/less_fan"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/jahat"
+        android:gravity="left"
+        android:rotation="90"
+        app:layout_constraintEnd_toStartOf="@+id/more_fan"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout36"
+        app:layout_constraintWidth_percent="0.15"
+        tools:layout_conversion_absoluteHeight="90dp"
+        tools:layout_conversion_absoluteWidth="90dp" />
+
+    <Button
+        android:id="@+id/more_fan"
+        android:layout_width="@dimen/_20mdp"
+        android:layout_height="@dimen/_20mdp"
+
+        android:layout_marginStart="16dp"
+        android:background="@drawable/jahat"
+
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="@+id/less_fan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/less_fan"
+        app:layout_constraintTop_toTopOf="@+id/less_fan"
+        tools:layout_conversion_absoluteHeight="90dp"
+        tools:layout_conversion_absoluteWidth="90dp" />
+
+
+    <Button
+        android:id="@+id/closeButton_fan"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/back_btn_color"
+        android:text="OK"
+        android:textSize="@dimen/_10font_mdp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/more_fan"
+        app:layout_constraintStart_toStartOf="@+id/less_fan"
+        app:layout_constraintTop_toBottomOf="@+id/less_fan"
+        tools:layout_conversion_absoluteHeight="50dp"
+        tools:layout_conversion_absoluteWidth="150dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

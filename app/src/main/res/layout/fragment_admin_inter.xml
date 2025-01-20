@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme2"
+    tools:context=".fragment.setting_setting.setting_admin">
+
+
+    <TextView
+
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter admin password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/setting_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/setting_password"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_19mdp"
+        android:layout_marginStart="8dp"
+
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/back_btn_color"
+        android:ems="10"
+        android:textSize="@dimen/_10font_mdp"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="5pt"
+        app:layout_constraintBottom_toTopOf="@+id/ok_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+        android:layout_marginStart="84dp"
+        android:background="@drawable/back_btn_color"
+
+        android:fontFamily="@font/prompt_regular"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/setting_password"
+        app:layout_constraintHeight_percent="0.08"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/setting_password"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_15mdp"
+        android:background="@drawable/back_btn_color"
+
+
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_7font_mdp"
+        app:layout_constraintBottom_toBottomOf="@+id/ok_btn"
+        app:layout_constraintEnd_toStartOf="@+id/ok_btn"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/setting_password"
+        app:layout_constraintTop_toTopOf="@+id/ok_btn"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent="0.25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

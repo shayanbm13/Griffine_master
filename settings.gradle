@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        google()
+
+        maven {
+            url "https://dl.google.com/dl/android/maven2"
+            name "linphone.org maven repository"
+            content {
+                includeGroup "org.linphone"
+            }
+        }
+        maven { url "https://linphone.org/maven_repository/" }
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        google()
+        maven {
+            url "https://dl.google.com/dl/android/maven2"
+            name "linphone.org maven repository"
+            content {
+                includeGroup "org.linphone"
+            }
+        }
+        maven { url "https://linphone.org/maven_repository/" }
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+rootProject.name = "Griffin"
+include ':app'
