@@ -4,3 +4,5 @@ For more information, visit: https://griffin-bms.com/
 
 The application operates using the UDP and TCP protocols for local communication and SMS for remote control.
 In future updates, cloud and internet-based functionalities will also be added.
+
+(Griffin Image 1.jpg)
